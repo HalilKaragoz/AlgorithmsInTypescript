@@ -1,2 +1,2 @@
 # AlgorithmsInTypescript
-Common algorithms implemented in Typescript
+Common algorithms implemented in Typescript. Work is still in progress...
