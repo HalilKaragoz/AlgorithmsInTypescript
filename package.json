@@ -1,0 +1,24 @@
+{
+  "name": "algorithmsintypescript",
+  "version": "1.0.0",
+  "description": "Common algoritms implemented in Typescript",
+  "main": "index.ts",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HalilKaragoz/AlgorithmsInTypescript.git"
+  },
+  "keywords": [
+    "typescript",
+    "algorithms",
+    "node.js"
+  ],
+  "author": "Halil İbrahim Karagöz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HalilKaragoz/AlgorithmsInTypescript/issues"
+  },
+  "homepage": "https://github.com/HalilKaragoz/AlgorithmsInTypescript#readme"
+}
