@@ -1,23 +1,18 @@
+export const insertionSort = (inArray:number[], inPlace=true): void | number[] => {
 
-// Include a parameter for in_place option
-export const InsertionSort = (in_array:number[])=>{
-  for(let i = 1; i < in_array.length; i++){
-    const key = in_array[i];
+  let resultArray: number[] = inPlace ? inArray : [...inArray];
+
+  for(let i = 1; i < resultArray.length; i++){
+    const key = resultArray[i];
     let j = i - 1;
 
-    while(j > -1 && in_array[j] > key){
-      in_array[j + 1] = in_array[j]
-      j = j - 1
+    while(j > -1 && resultArray[j] > key){
+      resultArray[j + 1] = resultArray[j];
+      j = j - 1;
     }
 
-    in_array[j + 1] = key
+    resultArray[j + 1] = key;
   }
+
+  return resultArray;
 }
-
-const array = [5, 2, 4, 6, 1, 3]
-
-console.log(array)
-
-InsertionSort(array)
-
-console.log(array)
