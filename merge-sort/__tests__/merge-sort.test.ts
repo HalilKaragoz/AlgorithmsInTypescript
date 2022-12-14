@@ -1,5 +1,20 @@
-import test from 'ava'
-import { mergeSort } from '../main'
+import test from 'ava';
+import sinon from 'sinon'
+import * as Algorithm from '../main';
+
+const { mergeSort } = Algorithm;
+
+sinon.stub(Algorithm, 'merge').callsFake((...args) => {
+
+  const [inArray, p, q, r] = args;
+
+  const arrayPart = inArray.slice(p, r + 1);
+
+  arrayPart.sort((a, b) => { return a - b; });
+
+  inArray.splice(p, r - p + 1, ...arrayPart);
+
+});
 
 const unsortedArray = [5, 2, 4, 6, 1, 3, 17, 5, 5, 3]
 

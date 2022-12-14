@@ -25,7 +25,7 @@ export const mergeSort = (inArray: number[], p?: number, r?: number, inPlace=tru
   return workArray;
 }
 
-const merge = (inArray: number[], p: number, q: number, r: number) => {
+export const merge = (inArray: number[], p: number, q: number, r: number) => {
 
   if(inArray.length <= 1){
     return
