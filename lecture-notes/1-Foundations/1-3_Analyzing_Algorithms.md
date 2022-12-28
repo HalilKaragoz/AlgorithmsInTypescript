@@ -18,4 +18,4 @@ The _running time_  of an algorithm on a particular input is the number of instr
 
 In the examination of algorithms, it is the _rate of growth_, or _order of growth_, of the running time that really interests us.
 
-While calculating the running time of an algorithm, represent the statement costs by constants that depend on the actual statement costs. For example, an algorithm might have a running time of $an^2 + bn + c$ where a, b and c are constants that depend on the statement costs. As the size of the input grows, the most significant term $n^2$ dominates the other terms and constants. Thus, we say the algorithms is has a worst-case running time of $\Theta(n2)$.
+While calculating the running time of an algorithm, represent the statement costs by constants that depend on the actual statement costs. For example, an algorithm might have a running time of $an^2 + bn + c$ where a, b and c are constants that depend on the statement costs. As the size of the input grows, the most significant term $n^2$ dominates the other terms and constants. Thus, we say the algorithms is has a worst-case running time of $\Theta(n^2)$.
